@@ -1,0 +1,100 @@
+header{
+    position: relative;
+    overflow: hidden;
+}
+
+.header {
+    height: 700px;
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.74), rgba(0, 0, 0, 0.712)), url('../7082_20210926_113243_206888857_original.JPG');
+    background-size: cover;
+    background-position: 0px;
+}
+
+.header__circles {
+
+        background-image: url('../7082_20210926_113146_206908801_original.JPG');
+        background-size: cover;
+        background-position: -250px;
+        width: 600px;
+        height: 600px;
+        border-radius: 100%;
+        position:absolute;
+        top: -150px;
+        right: -100px;
+        border: 4px solid white;
+
+    &::before{
+        content: "";
+        position: absolute;
+        width: 50%;
+        height: 50%;
+        border-radius: 100%;
+        background-image: url('../7082_20210926_124243_207136407_original.JPG');
+        background-size: cover;
+        background-position: -110px;
+        border: 4px solid white;
+        top: 450px;
+        right: -10px;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 50%;
+        height: 50%;
+        border-radius: 100%;
+        background-image: url('../7082_20210926_124247_207035528_original.JPG');
+        background-size: cover;
+        background-position: -50px;
+        border: 4px solid white;
+        top: 100px;
+        right: 450px;
+    }
+}
+
+blockquote {
+    position: absolute;
+    top:50%;
+    left: 25%;
+    transform: translate(-50%, -70%);
+    border:none;
+    padding: 3rem 1.5rem;
+    font-family: $--font-quote;
+    font-style: italic;
+    line-height: 5rem;;
+    font-size: 4.5rem;
+    color: #e9e9e9;
+    quotes: "\201C""\201D""\2018""\2019";
+   
+    width: 460px;
+
+   
+
+    &::before{
+        content: open-quote;
+        font-weight: 800;
+        font-size: 7rem;
+        color: #f05382;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    }
+
+    &::after{
+        content: close-quote;
+        font-weight: 800;
+        font-size: 7rem;
+        color: #f05382;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    }
+
+    @media screen and (max-width: 550px) {
+        width: 90vw;
+       
+    }
+}
+
+#first-letter{
+    font-family: 'Lobster', cursive;
+    font-size: 5rem;;
+    font-weight: 100;
+    color: rgb(255, 124, 124);
+}

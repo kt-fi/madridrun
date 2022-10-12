@@ -1,0 +1,42 @@
+.carousel {
+position: relative;
+    &-overlay {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(105deg, rgba(0, 0, 0, 0.644) 45%, rgba(0, 0, 0, 0) 45% );
+
+        &-text {
+
+            &-1 {
+                position: absolute;
+                top: 35%;
+                left: 2rem;
+                color: white;
+                font-size: 5rem;
+                font-family: $--font-text;
+                font-weight: 600;
+                background-color: rgba(255, 255, 255, 0.555);
+                width: max-content;
+                padding: 0 8rem 0 4rem;
+
+            }
+            &-2{
+                position: absolute;
+                top: 45%;
+                left: 4rem;
+                color: rgb(26, 26, 26);
+                font-size: 5rem;
+                font-family: $--font-text;
+                font-weight: 600;
+                background-color: rgba(138, 138, 138, 0.555);
+                width: max-content;
+                padding: 0 8rem 0 4rem;
+                
+            }
+            
+        }
+    }
+ 
+}
+
