@@ -164,9 +164,9 @@
                         </li>
                 </ul>
             </div>
-            <div class="races__container">
+            <div class="races__container opacityNull" id="races__container">
             <div class="races__info">
-                <h1 id="raceName">RaceName</h1>
+                <h1 id="raceName" class="races__racename">RaceName</h1>
                 <h4>Date:</h4>
                 <p class="races__info--date" id="raceDate">Date</p>
                 <h4>Info:</h4>
@@ -176,8 +176,11 @@
                     <button class="races__info--button">Inscription Page</button>
             </div>
             
+        <picture>
+            <source id="raceImage-mob" media="(max-width: 1000px)" srcset="">
+            <img src=""  class="races__info--image" id="raceImage" alt="" width="100%">
+        </picture>
         
-        <img src=""  class="races__info--image" id="raceImage" alt="" width="100%">
     </div>
         </section>
     </main>
