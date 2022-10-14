@@ -145,7 +145,7 @@ header {
 }
 @media screen and (max-width: 700px) {
   .header__circles::after {
-    background-image: url("../7082_20210926_124247_207035528_original-mob.jpg");
+    background-image: url("./7082_20210926_124247_207035528_original-mob.jpg");
     top: 5%;
     left: -50px;
   }
