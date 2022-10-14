@@ -510,7 +510,8 @@ blockquote::after {
 .active {
   border: 1px solid black;
   border-bottom: 0;
-  transition: 1s;
+  box-shadow: 0px -10px 10px -10px black;
+  transition: 0.5s;
 }
 
 .invisible {
