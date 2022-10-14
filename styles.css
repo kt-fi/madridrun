@@ -46,7 +46,7 @@ header {
 }
 
 .header__circles {
-  background-image: url("./7082_20210926_113146_206908801_original.jpg");
+  background-image: url("./towers.jpg.jpg");
   background-size: cover;
   background-position: -250px;
   width: 600px;
@@ -56,6 +56,31 @@ header {
   top: -150px;
   right: -100px;
   border: 4px solid white;
+}
+@media screen and (max-width: 1000px) {
+  .header__circles {
+    background-position: center;
+    top: -190px;
+    right: -190px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .header__circles {
+    width: 60vw;
+    height: 60vw;
+    transform: translateX(-50%);
+    top: 20px;
+    left: 50%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .header__circles {
+    width: 70vw;
+    height: 70vw;
+    transform: translateX(-50%);
+    top: 20px;
+    left: 50%;
+  }
 }
 .header__circles::before {
   content: "";
@@ -68,7 +93,19 @@ header {
   background-position: -110px;
   border: 4px solid white;
   top: 450px;
-  right: -10px;
+  right: -30px;
+}
+@media screen and (max-width: 1000px) {
+  .header__circles::before {
+    top: 450px;
+    right: 60px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .header__circles::before {
+    top: 55%;
+    right: -50px;
+  }
 }
 .header__circles::after {
   content: "";
@@ -82,6 +119,18 @@ header {
   border: 4px solid white;
   top: 100px;
   right: 450px;
+}
+@media screen and (max-width: 1000px) {
+  .header__circles::after {
+    top: 140px;
+    right: 450px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .header__circles::after {
+    top: 5%;
+    left: -50px;
+  }
 }
 
 blockquote {
@@ -98,6 +147,25 @@ blockquote {
   color: #e9e9e9;
   quotes: "“" "”" "‘" "’";
   width: 460px;
+}
+@media screen and (max-width: 1000px) {
+  blockquote {
+    top: 70%;
+    left: 35%;
+  }
+}
+@media screen and (max-width: 700px) {
+  blockquote {
+    text-align: center;
+    top: 80%;
+    left: 50%;
+  }
+}
+@media screen and (max-width: 550px) {
+  blockquote {
+    top: 70%;
+    font-size: 5.5rem;
+  }
 }
 blockquote::before {
   content: open-quote;
@@ -182,18 +250,34 @@ blockquote::after {
   width: 100%;
   background: linear-gradient(105deg, rgba(0, 0, 0, 0.644) 45%, rgba(0, 0, 0, 0) 45%);
 }
+.carousel-overlay-text {
+  font-size: 5rem;
+}
+@media screen and (max-width: 550px) {
+  .carousel-overlay-text {
+    font-size: 2rem;
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+  }
+}
 .carousel-overlay-text-1 {
   position: absolute;
   z-index: 1000;
   top: 35%;
   left: 2rem;
   color: white;
-  font-size: 5rem;
   font-family: "Ubuntu", serif;
   font-weight: 600;
   background-color: rgba(255, 255, 255, 0.555);
   width: max-content;
   padding: 0 8rem 0 4rem;
+}
+@media screen and (max-width: 550px) {
+  .carousel-overlay-text-1 {
+    top: 4rem;
+    left: 4rem;
+  }
 }
 .carousel-overlay-text-2 {
   position: absolute;
@@ -201,7 +285,6 @@ blockquote::after {
   top: 45%;
   left: 4rem;
   color: rgb(26, 26, 26);
-  font-size: 5rem;
   font-family: "Ubuntu", serif;
   font-weight: 600;
   background-color: rgba(138, 138, 138, 0.555);
@@ -213,9 +296,10 @@ blockquote::after {
     top: 50%;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 550px) {
   .carousel-overlay-text-2 {
-    top: 55%;
+    top: 7rem;
+    left: 4rem;
   }
 }
 
