@@ -44,6 +44,18 @@ header {
   background-size: cover;
   background-position: 0px;
 }
+@media screen and (max-width: 1000px) {
+  .header {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.74), rgba(0, 0, 0, 0.712)), url("./7082_20210926_113243_206888857_original-tab.JPG");
+    background-size: cover;
+  }
+}
+@media screen and (max-width: 550px) {
+  .header {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.74), rgba(0, 0, 0, 0.712)), url("./7082_20210926_113243_206888857_original-mob.jpg");
+    background-size: cover;
+  }
+}
 
 .header__circles {
   background-image: url("./towers.jpg.jpg");
@@ -59,6 +71,7 @@ header {
 }
 @media screen and (max-width: 1000px) {
   .header__circles {
+    background-image: url("./towers-tab.jpg");
     background-position: center;
     top: -190px;
     right: -190px;
@@ -75,6 +88,7 @@ header {
 }
 @media screen and (max-width: 550px) {
   .header__circles {
+    background-image: url("./towers-mob.jpg");
     width: 70vw;
     height: 70vw;
     transform: translateX(-50%);
@@ -97,12 +111,14 @@ header {
 }
 @media screen and (max-width: 1000px) {
   .header__circles::before {
+    background-image: url("./7082_20210926_124243_207136407_original-tab.jpg");
     top: 450px;
     right: 60px;
   }
 }
 @media screen and (max-width: 700px) {
   .header__circles::before {
+    background-image: url("./7082_20210926_124243_207136407_original-tab-mob.jpg");
     top: 55%;
     right: -50px;
   }
@@ -122,12 +138,14 @@ header {
 }
 @media screen and (max-width: 1000px) {
   .header__circles::after {
+    background-image: url("./7082_20210926_124247_207035528_original-tab.JPG");
     top: 140px;
     right: 450px;
   }
 }
 @media screen and (max-width: 700px) {
   .header__circles::after {
+    background-image: url("./7082_20210926_124247_207035528_original-mob.JPG");
     top: 5%;
     left: -50px;
   }
