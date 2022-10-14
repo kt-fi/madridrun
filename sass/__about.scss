@@ -26,10 +26,10 @@
 
         &--text {
             &::first-letter {
-               font-family: $--font-fancy;
+               font-family: 'Great Vibes', Times, serif;
                color: rgb(68, 68, 255);
                 font-size: 5rem;
-                text-shadow: 2px 2px 2px  black;
+                text-shadow: 1px 1px 1px  black;
             }
 
             &-first-line {

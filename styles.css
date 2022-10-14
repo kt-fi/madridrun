@@ -206,9 +206,8 @@ blockquote::after {
 }
 
 #first-letter {
-  font-family: "Lobster", cursive;
-  font-size: 5rem;
-  font-weight: 100;
+  font-size: 7rem;
+  font-weight: 800;
   color: rgb(255, 124, 124);
 }
 
@@ -242,10 +241,10 @@ blockquote::after {
   }
 }
 .about__bio--text::first-letter {
-  font-family: "Lobster", cursive;
+  font-family: "Great Vibes", Times, serif;
   color: rgb(68, 68, 255);
   font-size: 5rem;
-  text-shadow: 2px 2px 2px black;
+  text-shadow: 1px 1px 1px black;
 }
 .about__bio--text-first-line {
   font-weight: 400;
