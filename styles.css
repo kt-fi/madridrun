@@ -46,7 +46,7 @@ header {
 }
 @media screen and (max-width: 1000px) {
   .header {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.74), rgba(0, 0, 0, 0.712)), url("./7082_20210926_113243_206888857_original-tab.jpg");
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.74), rgba(0, 0, 0, 0.712)), url("./backgroundmain-tab.jpg");
     background-size: cover;
   }
 }
@@ -138,7 +138,7 @@ header {
 }
 @media screen and (max-width: 1000px) {
   .header__circles::after {
-    background-image: url("./7082_20210926_124247_207035528_original-tab.jpg");
+    background-image: url("./finish-tab.jpg");
     top: 140px;
     right: 450px;
   }

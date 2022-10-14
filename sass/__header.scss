@@ -10,7 +10,7 @@ header{
     background-position: 0px;
 
     @media screen and (max-width: 1000px){
-        background:linear-gradient(0deg, rgba(0, 0, 0, 0.74), rgba(0, 0, 0, 0.712)), url('./7082_20210926_113243_206888857_original-tab.jpg');
+        background:linear-gradient(0deg, rgba(0, 0, 0, 0.74), rgba(0, 0, 0, 0.712)), url('./backgroundmain-tab.jpg');
         background-size: cover;
     }
 
@@ -100,7 +100,7 @@ header{
         right: 450px;
 
         @media screen and (max-width: 1000px){
-            background-image: url('./7082_20210926_124247_207035528_original-tab.jpg');
+            background-image: url('./finish-tab.jpg');
             top: 140px;
             right: 450px;
         }
