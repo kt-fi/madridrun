@@ -461,14 +461,17 @@ blockquote::after {
 }
 .races__container {
   position: relative;
-  height: 550px;
+  height: 600px;
   text-align: center;
 }
 .races__racename {
+  height: 20%;
   font-size: 5rem;
   font-weight: 800;
   font-family: "Ubuntu", serif;
   margin: 2rem 0;
+  color: rgb(43, 43, 43);
+  text-shadow: 2px 2px rgba(148, 148, 148, 0.589);
 }
 .races__info {
   position: absolute;
@@ -483,11 +486,16 @@ blockquote::after {
 }
 .races__info--text {
   padding: 2rem;
-  font-weight: 400;
+  font-weight: 200;
+  height: 45%;
 }
 .races__info--date {
+  height: 10%;
   font-weight: 500;
-  font-size: 4rem;
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 .races__info--button {
   display: block;
@@ -525,6 +533,47 @@ blockquote::after {
   opacity: 1;
   transition: 0.5s;
   direction: forwards;
+}
+
+.footer {
+  height: 300px;
+  background-color: rgb(53, 90, 255);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.footer__header {
+  padding: 3rem;
+  color: #A6D1E6;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.349);
+  font-size: 5rem;
+  width: 100vw;
+}
+.footer__main {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.5rem;
+  color: white;
+}
+.footer__links {
+  width: 50%;
+  border-right: 1px solid white;
+}
+.footer__social {
+  width: 50%;
+}
+.footer__social--icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.footer__social--icons-icon {
+  font-size: 2.5rem;
+  margin: 1.5rem;
+}
+
+ul {
+  list-style: none;
 }
 
 /*# sourceMappingURL=styles.css.map */

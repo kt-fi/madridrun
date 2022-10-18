@@ -1,0 +1,44 @@
+.footer {
+    height: 300px;
+    background-color: rgb(53, 90, 255);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    &__header {
+        padding: 3rem;
+        color: #A6D1E6;
+        text-shadow: 2px 2px rgba(0, 0, 0, 0.349);
+        font-size: 5rem;
+        width: 100vw;
+    }
+
+    &__main {
+        display: flex;
+        flex-direction: row;
+        font-size: 1.5rem;
+        color: white;
+    }
+    &__links {
+        width: 50%;
+        border-right: 1px solid white;
+    }
+
+    &__social {
+        width: 50%;
+
+        &--icons {
+            display: flex;
+            flex-direction: row;
+        justify-content: center;
+
+            &-icon {
+                font-size: 2.5rem;
+                margin: 1.5rem;
+            }
+        }
+    }
+}
+
+ul{
+    list-style: none;
+}

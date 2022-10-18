@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d7b209de6f.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -167,9 +168,10 @@
             <div class="races__container opacityNull" id="races__container">
             <div class="races__info">
                 <h1 id="raceName" class="races__racename">RaceName</h1>
-                <h4>Date:</h4>
-                <p class="races__info--date" id="raceDate">Date</p>
-                <h4>Info:</h4>
+                <div class="races__info--date">
+
+                <p id="raceDate"> Date</p>
+            </div>
                 <p class="races__info--text" id="raceInfo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, perspiciati
                     s. Laboriosam ipsa similique doloremque quibusdam consectetur nec
                     essitatibus debitis totam hic quam, accusantium, neque reprehenderit unde pariatur deleniti tenetur minima. Doloribus?</p>
@@ -178,15 +180,41 @@
             
         <picture>
             <source id="raceImage-mob" media="(max-width: 1000px)" srcset="">
-            <img src=""  class="races__info--image" id="raceImage" alt="" width="100%">
+            <img src=""  class="races__info--image" id="raceImage" alt="" width="100%" height="600px">
         </picture>
         
     </div>
         </section>
     </main>
 
-    <footer>
-
+    <footer class="footer">
+        
+               <h2 class="footer__header">madridrunnering</h2>
+        
+         <div class="footer__main">
+            <div class="footer__links">
+                <ul>
+                    <li>News</li>
+                    <li>Gallery</li>
+                    <li>Where To Run</li>
+                    <li>Upcoming Races</li>
+                </ul>
+            </div>
+            <div class="footer__social">
+                <p>christopherHillman@email.com</p>
+                <ul class="footer__social--icons">
+                    <li class="footer__social--icons-icon">
+                        <i class="fa-brands fa-strava"></i>
+                    </li>
+                    <li class="footer__social--icons-icon">
+                        <i class="fa-brands fa-facebook"></i>
+                    </li>
+                    <li class="footer__social--icons-icon">
+                        <i class="fa-brands fa-twitter"></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </footer>
 
 
