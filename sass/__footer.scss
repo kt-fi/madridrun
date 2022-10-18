@@ -1,9 +1,10 @@
 .footer {
-    height: 300px;
+    height: max-content;
     background-color: rgb(53, 90, 255);
     text-align: center;
     display: flex;
     flex-direction: column;
+    padding-bottom: 5rem;
     &__header {
         padding: 3rem;
         color: #A6D1E6;
@@ -17,19 +18,41 @@
         flex-direction: row;
         font-size: 1.5rem;
         color: white;
+
+        @media screen and (max-width: 550px) {
+            flex-direction: column;
+        }
+
     }
     &__links {
         width: 50%;
         border-right: 1px solid white;
+
+        @media screen and (max-width: 550px) {
+            width: 100%;
+            border: none;
+        }
     }
 
     &__social {
         width: 50%;
+display: flex;
+            flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
 
+        @media screen and (max-width: 550px) {
+            width: 100%;
+            border: none;
+        }
         &--icons {
             display: flex;
             flex-direction: row;
         justify-content: center;
+        align-items: center;
+        align-content: center;
+
 
             &-icon {
                 font-size: 2.5rem;

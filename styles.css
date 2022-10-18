@@ -536,11 +536,12 @@ blockquote::after {
 }
 
 .footer {
-  height: 300px;
+  height: max-content;
   background-color: rgb(53, 90, 255);
   text-align: center;
   display: flex;
   flex-direction: column;
+  padding-bottom: 5rem;
 }
 .footer__header {
   padding: 3rem;
@@ -555,17 +556,41 @@ blockquote::after {
   font-size: 1.5rem;
   color: white;
 }
+@media screen and (max-width: 550px) {
+  .footer__main {
+    flex-direction: column;
+  }
+}
 .footer__links {
   width: 50%;
   border-right: 1px solid white;
 }
+@media screen and (max-width: 550px) {
+  .footer__links {
+    width: 100%;
+    border: none;
+  }
+}
 .footer__social {
   width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+@media screen and (max-width: 550px) {
+  .footer__social {
+    width: 100%;
+    border: none;
+  }
 }
 .footer__social--icons {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 .footer__social--icons-icon {
   font-size: 2.5rem;
