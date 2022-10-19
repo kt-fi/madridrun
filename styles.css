@@ -537,7 +537,7 @@ blockquote::after {
 
 .footer {
   height: max-content;
-  background-color: rgba(0, 0, 0, 0.986);
+  background-color: rgba(0, 0, 0, 0.89);
   text-align: center;
   display: flex;
   flex-direction: column;
