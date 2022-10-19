@@ -175,14 +175,14 @@ blockquote {
 @media screen and (max-width: 700px) {
   blockquote {
     text-align: center;
-    top: 80%;
+    top: 85%;
     left: 50%;
     width: 90vw;
   }
 }
 @media screen and (max-width: 550px) {
   blockquote {
-    top: 70%;
+    top: 78%;
     font-size: 5.5rem;
     line-height: 10rem;
   }
