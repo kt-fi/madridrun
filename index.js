@@ -4,9 +4,15 @@ let races = [
     { id: 2, raceName: 'Movistar 1/2 Marathon', date: 'March 2023', info: 'Madrid Half Marathon is an annual half marathon arranged in Madrid, Spain. Organised by the Marathon Sports Association, it is held at the beginning of April and in 2012 it attracted more than 13,000 runners', image: './halfmadrid.jpeg', mobImg: './madridhalf-mob.png'    }, 
     { id: 3, raceName: 'EDP Madrid Marathon', date: '04/04/2023', info: 'The Rock and Roll Madrid Marathon (Spanish: Maratón de Rock and Roll Madrid) is an annual marathon race which takes place in Madrid, Spain, in late April. The event was first held in 1978 and has since gained IAAF Gold Label Road Race status and had over 15,000 runners participate in the 2017 edition.[1] A 10 km road race was added in 2010 and a Half Marathon road race was added in 2012.[2]', image: './madridmarathon.jpeg' , mobImg: './madridmarathon-mob.png'   }, 
     { id: 4, raceName: 'London Marathon', date: '25/04/2023', info: 'The London Marathon is an annual marathon held in London, United Kingdom, and is the 2nd largest annual road race in the UK, after the Great North Run in Newcastle. Founded by athletes Chris Brasher and John Disley in 1981, it is typically held in April but has moved to October for 2020, 2021 and 2022 due to the COVID-19 pandemic. The largely flat course is set around the River Thames, starting in Blackheath and finishing at The Mall. Hugh Brasher (son of Chris) is the current Race Director and Nick Bitel its Chief Executive.', image: './LondonMarathon.jpg', mobImg: './londonmarathon-mob.jpg'    }
-]
+];
 
+let menu = document.querySelector('.menu');
+let hamburger = document.getElementById('hamburger');
 let racesContainer = document.getElementById('races__container');
+let mobMenu = false;
+
+
+// RACES SECTION TABS
 
 const selectRace = (raceName) => {
     let raceNameEl = document.getElementById(raceName);
@@ -37,6 +43,32 @@ const getRaceData = (raceName) => {
         document.getElementById("raceImage").src = selectedRace.image;
         document.getElementById("raceImage-mob").srcset = selectedRace.mobImg;
     },250)
+}
+
+
+// OPEN CLOSE MENU
+
+const openMenu = () => {
+    menu.style.transition = 'all 1s';
+    if(!mobMenu){  
+        menu.style.left = '0vw'; 
+        switchMenuState();
+    }else{
+        menu.style.left = '-85vw'; 
+        switchMenuState();
+    }
+}
+
+const switchMenuState = () =>{
+    mobMenu = !mobMenu;
+
+    if(mobMenu){  
+        hamburger.classList.remove('fa-bars');
+        hamburger.classList.add('fa-x');
+    }else{
+        hamburger.classList.remove('fa-x');
+        hamburger.classList.add('fa-bars');
+    }
 }
 
 (getRaceData(1))

@@ -1,16 +1,18 @@
 .footer {
     height: max-content;
-    background-color: rgb(53, 90, 255);
+    background-color: rgba(0, 0, 0, 0.986);
     text-align: center;
     display: flex;
     flex-direction: column;
     padding-bottom: 5rem;
     &__header {
+        font-family: $--font-quote;
+        font-weight: 800;
         padding: 3rem;
-        color: #A6D1E6;
-        text-shadow: 2px 2px rgba(0, 0, 0, 0.349);
+        color: rgb(252, 106, 89);
+        text-shadow: 1px 1px 1px rgba(161, 161, 161, 0.349);
         font-size: 5rem;
-        width: 100vw;
+        width: 100%;
     }
 
     &__main {
@@ -27,7 +29,8 @@
     &__links {
         width: 50%;
         border-right: 1px solid white;
-
+        font-family: $--font-text;
+        font-size: 2rem;
         @media screen and (max-width: 550px) {
             width: 100%;
             border: none;
@@ -36,8 +39,8 @@
 
     &__social {
         width: 50%;
-display: flex;
-            flex-direction: row;
+        display: flex;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
         align-content: center;
