@@ -658,6 +658,11 @@ ul {
   color: white;
   text-shadow: 2px 2px black;
 }
+@media screen and (max-height: 500px) {
+  .menu__burger {
+    display: block;
+  }
+}
 @media screen and (max-width: 700px) {
   .menu__burger {
     display: block;
