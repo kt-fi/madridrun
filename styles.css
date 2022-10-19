@@ -622,6 +622,11 @@ ul {
   margin-bottom: 4rem;
   font-family: "Italiana", serif;
 }
+@media screen and (max-height: 380px) {
+  .menu__header {
+    margin-bottom: 2rem;
+  }
+}
 .menu__links {
   color: white;
   font-family: "Poiret One", cursive;
@@ -632,6 +637,17 @@ ul {
   border-bottom: 0.5px solid rgb(32, 32, 32);
   padding: 4rem 0;
 }
+@media screen and (max-height: 500px) {
+  .menu__links--link {
+    padding: 2rem;
+  }
+}
+@media screen and (max-height: 380px) {
+  .menu__links--link {
+    font-size: 2rem;
+    padding: 0.5rem;
+  }
+}
 .menu__burger {
   z-index: 10001;
   display: none;
@@ -640,6 +656,7 @@ ul {
   right: 4rem;
   font-size: 4rem;
   color: white;
+  text-shadow: 2px 2px black;
 }
 @media screen and (max-width: 700px) {
   .menu__burger {
